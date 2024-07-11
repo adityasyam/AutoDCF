@@ -87,11 +87,116 @@ interest_expense_past_year = [-20.50]
 this list contains the interest expense for the previous fiscal year
 """
 
+net_income_past_year = [215.90]
+"""
+this list contains the net income earned during the previous fiscal year
+"""
 
+#BALANCE SHEET ITEMS FOR PAST YEARS - PLEASE ENTER ALL MONETARY DATA IN A
+#UNIFORM UNIT, FOR EG. ALL IN THOUSANDS OR ALL IN MILLIONS. ENTER IN THE FORM
+#[year_t-1] or [year_t-2, year_t-1], as required.
 
+cash_past_year = [309.90]
+"""
+this list contains the cash held during the previous fiscal year
+"""
 
+receivables_past_year = [178.50]
+"""
+this list contains the accounts receivable during the previous fiscal year
+"""
 
+inventory_past_two_years = [525.80, 470.60]
+"""
+this list contains the inventories held during the previous fiscal year
+"""
 
+other_current_assets_past_year = [37.70]
+"""
+this list contains the other current assets (like prepaid expenses) during the previous fiscal year
+"""
 
+ppe_past_two_years = [276.20, 327.30]
+"""
+this list contains the property, plant, and equipment (PP&E) held during the previous two fiscal years
+"""
 
+intangible_assets_past_year = [1014.50]
+"""
+this list contains the intantible assets, like goodwill, held during the previous fiscal year
+"""
+
+other_long_term_assets_past_year = [62.60]
+"""
+this list contains the other long term assets, like operating lease assets, held during the previous fiscal year
+"""
+
+accounts_payable_past_year = [146.90]
+"""
+this list contains the accounts payable during the previous fiscal year
+"""
+
+income_taxes_payable_past_year = [0.0]
+"""
+this list contains the income taxes payable during the previous fiscal year
+"""
+
+accrued_expenses_past_year = [150.0]
+"""
+this list contains the total accrued expenses during the previous fiscal year
+"""
+
+other_current_liabilities_past_year = [48.50]
+"""
+this list contains the other current liabilities during the previous fiscal year
+"""
+
+long_term_debt_past_year = [592.40]
+"""
+this list contains the long term debt payable during the previous fiscal year
+"""
+
+other_long_term_liabilities_past_year = [70.0]
+"""
+this list contains the other long term liabilities during the previous fiscal year
+"""
+
+preferred_stock_past_year = [0.0]
+"""
+this list contains the preferred stock during the previous fiscal year
+"""
+
+common_stock_past_year = [25.90]
+"""
+this list contains the common stock during the previous fiscal year
+"""
+
+apic_past_year = [197.70]
+"""
+this list contains the additional paid-in-capital during the previous fiscal year
+"""
+
+retained_earnings_past_year = [1747.80]
+"""
+this list contains the retained earnings during the previous fiscal year
+"""
+
+treasury_stock_past_year = [-602.90]
+"""
+this list contains the treasury stock during the previous fiscal year
+"""
+
+dividends_past_year = [9.2]
+"""
+this list contains the dividends distributed to stock-holders during the previous fiscal year
+"""
+
+#CASH FLOW ITEMS FOR PAST YEARS - PLEASE ENTER ALL MONETARY DATA IN A
+#UNIFORM UNIT, FOR EG. ALL IN THOUSANDS OR ALL IN MILLIONS. ENTER IN THE FORM
+#[year_t-1] or [year_t-2, year_t-1], as required.
+
+depreciation_and_amortization_past_year = [46.9]
+"""
+this list contains the depreciation and amortization incurred during the previous fiscal year
+"""
 
