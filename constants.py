@@ -191,10 +191,6 @@ dividends_past_year = [9.2]
 this list contains the dividends distributed to stock-holders during the previous fiscal year
 """
 
-#CASH FLOW ITEMS FOR PAST YEARS - PLEASE ENTER ALL MONETARY DATA IN A
-#UNIFORM UNIT, FOR EG. ALL IN THOUSANDS OR ALL IN MILLIONS. ENTER IN THE FORM
-#[year_t-1] or [year_t-2, year_t-1], as required.
-
 depreciation_and_amortization_past_year = [46.9]
 """
 this list contains the depreciation and amortization incurred during the previous fiscal year
