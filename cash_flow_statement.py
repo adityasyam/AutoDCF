@@ -14,3 +14,31 @@ other_current_liabilities_base_forecasted, lt_debt_base_forecasted, other_lt_lia
 capex_base_forecasted, dividends_base_forecasted
 
 import numpy as np
+
+change_receivables_base = np.zeros(number_of_years)
+change_inventories_base = np.zeros(number_of_years)
+change_oca_base = np.zeros(number_of_years)
+change_intangible_assets_base = np.zeros(number_of_years)
+change_payables_base = np.zeros(number_of_years)
+change_taxes_payables_base = np.zeros(number_of_years)
+change_accrued_expenses_base = np.zeros(number_of_years)
+change_ocl_base = np.zeros(number_of_years)
+change_receivables_base = np.zeros(number_of_years)
+change_receivables_base = np.zeros(number_of_years)
+change_receivables_base = np.zeros(number_of_years)
+change_olt_liabilities_base = np.zeros(number_of_years)
+cash_flow_operations_base = np.zeros(number_of_years)
+
+capex_base = np.zeros(number_of_years)
+change_otl_assets_base = np.zeros(number_of_years)
+cash_flow_investments_base = np.zeros(number_of_years)
+
+change_long_term_debt_base = np.zeros(number_of_years)
+net_equity_payout = np.zeros(number_of_years)
+cash_flow_financing_base = np.zeros(number_of_years)
+
+change_in_cash_base = np.zeros(number_of_years)
+
+
+
+
