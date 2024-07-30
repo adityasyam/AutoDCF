@@ -18,10 +18,11 @@ def stringify(num_array):
   return string
 
 
-
 str_forecase_revenues_base = stringify(forecast_revenues_base)
 print("The forecasted revenues for the years specified are " + str_forecase_revenues_base)
 
 str_forecast_net_income_base = stringify(forecast_net_income_base)
 print("The forecasted net income for the years specified is " + str_forecast_net_income_base)
+
+
 

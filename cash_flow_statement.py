@@ -4,7 +4,7 @@ accrued_expenses_past_year, other_current_liabilities_past_year, long_term_debt_
 other_long_term_liabilities_past_year, preferred_stock_past_year, common_stock_past_year, \
 apic_past_year, retained_earnings_past_year, treasury_stock_past_year, net_revenues_past_year, \
 COGS_past_year, SGA_past_year, dividends_past_year, net_income_past_year, depreciation_and_amortization_past_year, \
-accounts_payable_past_year, income_taxes_payable_past_year
+accounts_payable_past_year, income_taxes_payable_past_year, other_long_term_assets_past_year
 
 from income_statement import forecast_net_income_base
 
@@ -12,7 +12,7 @@ from balance_sheet import dep_amort_base_forecasted, receivables_base_forecasted
 other_current_assets_base_forecasted, intangible_assets_base_forecasted, other_lt_assets_base_forecasted, \
 accounts_payable_base_forecasted, income_taxes_payable_base_forecasted, accrued_expenses_base_forecasted, \
 other_current_liabilities_base_forecasted, lt_debt_base_forecasted, other_lt_liabilities_base_forecasted, \
-capex_base_forecasted, dividends_base_forecasted
+capex_base_forecasted, dividends_base_forecasted, capex_base_forecasted, total_equity_base_forecasted
 
 import numpy as np
 
@@ -67,6 +67,27 @@ def cash_flow_forecast(market_outlook):
         change_olt_liabilities_base[i] = other_lt_liabilities_base_forecasted[i] - other_lt_liabilities_base_forecasted[i-1]
 
       cash_flow_operations_base[i] = change_receivables_base[i]+change_inventories_base[i]+change_oca_base[i]+change_intangible_assets_base[i]+change_payables_base[i]+change_taxes_payables_base[i]+change_accrued_expenses_base[i]+change_ocl_base[i]+change_olt_liabilities_base[i]
+
+      capex_base[i] = -(capex_base_forecasted[i])
+
+      if i==0:
+        change_otl_assets_base[i] = other_long_term_assets_past_year[0]-other_lt_assets_base_forecasted[i]
+        change_long_term_debt_base[i] = lt_debt_base_forecasted[i] - long_term_debt_past_year[0]
+
+        net_equity_payout[i] = -((preferred_stock_past_year[0]+common_stock_past_year[0]+apic_past_year[0]+retained_earnings_past_year[0]+treasury_stock_past_year[0])-total_equity_base_forecasted[i]) - forecast_net_income_base[i]
+
+
+      else:
+        change_otl_assets_base[i] = other_lt_assets_base_forecasted[i-1]-other_lt_assets_base_forecasted[i]
+        change_long_term_debt_base[i] = lt_debt_base_forecasted[i] - lt_debt_base_forecasted[i-1]
+
+        net_equity_payout[i] = -(total_equity_base_forecasted[i-1]-total_equity_base_forecasted[i]) - forecast_net_income_base[i]
+
+
+      cash_flow_financing_base[i] = capex_base[i] + change_otl_assets_base[i]
+      cash_flow_investments_base[i] = change_long_term_debt_base[i] + net_equity_payout[i]
+
+      change_in_cash_base[i] = cash_flow_operations_base[i]+cash_flow_financing_base[i]+cash_flow_investments_base[i]
 
 
 cash_flow_forecast("base")
