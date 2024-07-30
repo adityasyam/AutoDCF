@@ -9,7 +9,6 @@ sga_ratio = SGA_past_year[0]/net_revenues_past_year[0]
 amort_ratio = amortization_past_year[0]/net_revenues_past_year[0]
 interest_ratio = interest_expense_past_year[0]/net_revenues_past_year[0]
 
-
 def income_calc(net_revenue_forecasted_growth_rates):
   net_revenues_forecasted = np.zeros(number_of_years)
   cogs_forecasted = np.zeros(number_of_years)
