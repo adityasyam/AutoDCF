@@ -37,10 +37,10 @@ def income_calc(net_revenue_forecasted_growth_rates):
     net_income_forecasted[i] = (1-(tax_rate/100))*(op_income_forecasted[i] - interest_expense_forecasted[i])
   
   
-  return net_revenues_forecasted, net_income_forecasted, cogs_forecasted, sga_forecasted
+  return net_revenues_forecasted, net_income_forecasted, cogs_forecasted, sga_forecasted, op_income_forecasted
 
 
-forecast_revenues_base, forecast_net_income_base, cogs_forecasted_base, sga_forecasted_base = income_calc(net_revenue_forecasted_growth_rates)
+forecast_revenues_base, forecast_net_income_base, cogs_forecasted_base, sga_forecasted_base, op_income_forecasted_base = income_calc(net_revenue_forecasted_growth_rates)
 
 forecast_revenues_base = np.round(forecast_revenues_base, 2)
 forecast_net_income_base = np.round(forecast_net_income_base, 2)
